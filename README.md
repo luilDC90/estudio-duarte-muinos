@@ -1,5 +1,17 @@
 # Estudio Duarte Muiños - Sitio Web
 
+## Contexto del proyecto
+
+El cliente perdió acceso al sitio web original por vencimiento del servicio de hosting, sin contar con backup del código fuente. El contenido fue recuperado a partir del historial cacheado en internet (Google Cache, Wayback Machine), extrayendo textos, estructura de páginas e imágenes disponibles.
+
+Con ese material se reconstruyó el sitio desde cero, con foco en tres mejoras principales respecto al original:
+
+- **Responsive**: el sitio anterior no se adaptaba a dispositivos móviles, la nueva versión es mobile-first
+- **Vue 3**: migración de HTML estático a una SPA con componentes reutilizables y routing del lado del cliente
+- **Contenido centralizado**: todos los textos, datos de contacto y estructura de páginas se gestionan desde un único archivo `src/data/contenido.json`, facilitando actualizaciones sin tocar el código
+
+---
+
 Sitio web moderno desarrollado en Vue 3 para el Estudio Duarte Muiños, estudio jurídico especializado en múltiples áreas del derecho.
 
 ## 🚀 Características
@@ -14,7 +26,7 @@ Sitio web moderno desarrollado en Vue 3 para el Estudio Duarte Muiños, estudio 
 ## 📁 Estructura del Proyecto
 
 ```
-juan/
+app/
 ├── index.html              # HTML principal
 ├── package.json            # Dependencias del proyecto
 ├── vite.config.js         # Configuración de Vite
